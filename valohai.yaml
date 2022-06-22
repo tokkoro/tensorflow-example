@@ -11,7 +11,7 @@
 
 - step:
     name: train-model
-    image: tensorflow/tensorflow:2.6.0
+    image: tensorflow/tensorflow:latest
     command:
       - pip install valohai-utils
       - python ./train_model.py {parameters}

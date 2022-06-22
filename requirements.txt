@@ -42,7 +42,7 @@ idna==3.2
     # via requests
 jsonschema==3.2.0
     # via valohai-yaml
-keras==2.6.0
+keras==2.7.0
     # via tensorflow
 keras-preprocessing==1.1.2
     # via tensorflow

@@ -14,6 +14,8 @@ def log_metadata(epoch, logs):
 
 
 def main():
+    print("USING KERAS VERSION: " + tf.keras.__version__)
+
     # valohai.prepare enables us to update the valohai.yaml configuration file with
     # the Valohai command-line client by running `valohai yaml step train_model.py`
 
