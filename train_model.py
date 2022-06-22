@@ -6,14 +6,17 @@ import valohai
 
 
 def log_metadata(epoch, logs):
+    tf.print()
     """Helper function to log training metrics"""
-    with valohai.logger() as logger:
-        logger.log('epoch', epoch)
-        logger.log('accuracy', logs['accuracy'])
-        logger.log('loss', logs['loss'])
+    # with valohai.logger() as logger:
+    tf.print('epoch', epoch)
+    tf.print('accuracy', logs['accuracy'])
+    tf.print('loss', logs['loss'])
 
 
 def main():
+    print("USING KERAS VERSION: " + tf.keras.__version__)
+
     # valohai.prepare enables us to update the valohai.yaml configuration file with
     # the Valohai command-line client by running `valohai yaml step train_model.py`
 
